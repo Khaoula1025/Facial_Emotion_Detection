@@ -1,0 +1,41 @@
+sqlalchemy 
+pydantic
+# numpy
+# scikit-learn 
+# pandas 
+# joblib 
+# ---------- Core Backend ----------
+fastapi
+uvicorn
+# ---------- Database (PostgreSQL + ORM) ----------
+SQLAlchemy
+#psycopg2-binary
+#alembic==1.13.2  # optional: for DB migrations
+
+# ---------- Machine Learning & Image Processing ----------
+# tensorflow==2.16.1
+# opencv-python==4.10.0.84
+# numpy==1.26.4
+# pandas==2.2.2
+# scikit-learn==1.5.2
+
+# ---------- Image Utilities ----------
+# Pillow==10.3.0
+
+# # ---------- Environment & Config ----------
+# python-dotenv==1.0.1
+# pydantic-settings==2.2.1  # For .env integration with Pydantic v2+
+
+# ---------- Testing ----------
+# pytest
+# httpx         # For FastAPI test client
+# pytest-asyncio==0.24.0  # For async route testing
+# pytest-cov==5.0.0       # For test coverage reports
+
+# # ---------- GitHub Actions / CI ----------
+# coverage==7.6.1
+
+# # ---------- Optional Tools ----------
+# jupyter==1.0.0
+# matplotlib==3.9.2
+# seaborn==0.13.2
