@@ -8,3 +8,5 @@ from .database import Base
 #     emotion = Column(String, nullable=False)
 #     confidence = Column(Float, nullable=False)
 #     created_at = Column(DateTime, default=datetime.utcnow)
+
+
