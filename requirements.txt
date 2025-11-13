@@ -5,6 +5,9 @@ pandas
 # ---------- Core Backend ----------
 fastapi
 uvicorn
+python-dotenv
+python-multipart
+pytest 
 # ---------- Database (PostgreSQL + ORM) ----------
 SQLAlchemy
 psycopg2-binary
@@ -20,4 +23,5 @@ opencv-contrib-python
 # # ---------- Optional Tools ----------
 matplotlib
 seaborn
+httpx
 

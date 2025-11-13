@@ -20,8 +20,6 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # Only for face detection
 # Detect faces (use grayscale for detection)
 faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
-print(f"{len(faces)} visage(s) détecté(s)")
-
 # Process each face
 for (x, y, w, h) in faces:
     # Extract face from ORIGINAL COLOR IMAGE (not grayscale!)
@@ -33,7 +31,6 @@ for (x, y, w, h) in faces:
     # Convert BGR to RGB (TensorFlow expects RGB)
     face_rgb = cv2.cvtColor(face_resized, cv2.COLOR_BGR2RGB)
     
-    # NO normalization here! The model does it internally with Rescaling layer
     # Just add batch dimension
     face_input = np.expand_dims(face_rgb, axis=0)
     
