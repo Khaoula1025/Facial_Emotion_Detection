@@ -241,7 +241,6 @@ Dense(num_classes) + Softmax
 - **Optimiseur** : Adam
 - **Fonction de perte** : Categorical Crossentropy
 - **Métriques** : Accuracy
-- **Augmentation** : Rotation, Zoom, Flip horizontal
 
 ## 🔧 Configuration
 
@@ -249,53 +248,13 @@ Dense(num_classes) + Softmax
 
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/emotion_detection
-MODEL_PATH=models/emotion_model.h5
-CASCADE_PATH=haarcascade_frontalface_default.xml
+MODEL_PATH=ml/ml_models/emotion_detection.keras
+CASCADE_PATH=ml/ml_models/haarcascade_frontalface_default.xml
 ```
-
-## 📈 Performances
-
-- **Accuracy** : ~85-90% sur le dataset de validation
-- **Temps de prédiction** : <100ms par image
-- **Détection de visages** : Fonctionne sur des visages frontaux bien éclairés
-
-## 🚧 Limitations et Améliorations Futures
-
-### Limitations actuelles
-- Détection limitée aux visages frontaux
-- Performance variable selon l'éclairage
-- Dataset limité à certaines émotions de base
-
-### Améliorations prévues
-- [ ] Utilisation de modèles de détection plus robustes (MTCNN, RetinaFace)
-- [ ] Fine-tuning avec des modèles pré-entraînés (VGG, ResNet)
-- [ ] Support de plusieurs visages dans une image
-- [ ] Ajout d'une interface web
-- [ ] Système d'authentification
-- [ ] Export des données en CSV/Excel
-- [ ] Monitoring et logging avancés
-
-## 👥 Contributeurs
-
-- **Votre Nom** - Développeur IA
-
-## 📝 Licence
-
-Ce projet est sous licence MIT.
 
 ## 📞 Contact
 
 Pour toute question ou suggestion :
-- Email: votre.email@example.com
-- GitHub: [@votre-username](https://github.com/votre-username)
-
-## 🙏 Remerciements
-
-- OpenCV pour les outils de vision par ordinateur
-- TensorFlow/Keras pour le framework de deep learning
-- FastAPI pour le framework web moderne et performant
-- La communauté open-source pour les datasets d'émotions
+- Email: khaoula.esioudi@gmail.com
 
 ---
-
-**Note** : Ce projet est un prototype développé à des fins éducatives et de validation de concept. Pour une utilisation en production, des améliorations de sécurité, de performance et de robustesse sont nécessaires.
